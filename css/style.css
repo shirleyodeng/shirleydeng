@@ -42,7 +42,7 @@ ul { list-style: none; }
   letter-spacing: 0.5px;
 }
 .avatar {
-  height: 120px;
+  height: 140px;
   position: absolute;
   left: 0;
   right: 0;
@@ -60,6 +60,7 @@ ul { list-style: none; }
   letter-spacing: 3px;
   text-transform: uppercase;
   text-align: center;
+  margin: auto;
 }
 
 .content {
@@ -106,7 +107,7 @@ ul { list-style: none; }
    max-height:100%;
 }
 
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
   .container {
     width: 700px;
   }
@@ -120,4 +121,4 @@ ul { list-style: none; }
   .container {
     width: 300px;
   }
-}
+} */
