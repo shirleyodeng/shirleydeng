@@ -1,0 +1,123 @@
+@import url("components/profile_header.css");
+@import url("fonts/avenir.css");
+body {
+  border: 20px solid #FFF;
+  background-color: #f5f5f5;
+  padding: 30px;
+  margin: 0;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #F24A4B;
+}
+ul { list-style: none; }
+.text-pink { color: #F24A4B; }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 50px;
+  line-height: 40px;
+  color: #F24A4B;
+}
+.navbar-links {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-weight: 700;
+}
+.navbar-links a {
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+.avatar {
+  height: 120px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container {
+  /* display: flex;
+  align-content: center;
+  justify-content: center; */
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.section-white {
+  background-color: white;
+/*  margin: 25px;*/
+/*  border-radius: 15px;*/
+}
+
+.text-center {
+  text-align: center;
+}
+
+.list-inline li {
+  display: inline;
+  padding: 0 20px;
+}
+
+.list-inline {
+  margin: 0;
+  padding-left: 0;
+}
+
+.social:hover {
+  opacity: 0.6;
+}
+
+#about-me {
+  padding: 40px 50px;
+}
+
+#page-content {
+  margin-left: 115px;
+}
+
+#places img {
+   max-width:100%;
+   height:auto;
+   max-height:100%;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
