@@ -139,7 +139,7 @@ ul { list-style: none; }
 /* .play-container {
   margin-top: 5rem;
 } */
-.play-container hr {
+.pink-hr {
   height: 2px;
   background: #F24A4B;
   width: 100px;
@@ -150,6 +150,25 @@ ul { list-style: none; }
   width: 100%;
   height: 450px;
   object-fit: cover;
+}
+.work-container {
+  margin-bottom: 80px;
+}
+.project-link:hover {
+  color: #F24A4B;
+  font-size: 16px;
+  cursor: pointer;
+}
+.project-image {
+  width: 100%;
+}
+.project-blurb, .project-stack, .project-spec {
+  margin-top: 1.5rem;
+}
+.project-close {
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 2rem;
 }
 @viewport {
   width: device-width ;
@@ -177,5 +196,5 @@ ul { list-style: none; }
   }
   .links-container { line-height: 18px !important; }
   .about-container { top: 100px !important; }
-  .play-container { margin-top: 20px; }
+  .play-container, .work-container { margin-top: 20px; }
 }
