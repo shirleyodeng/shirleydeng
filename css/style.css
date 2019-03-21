@@ -45,15 +45,15 @@ ul { list-style: none; }
   color: #F24A4B;
 }
 .nav-bar-links-container {
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   text-align: right;
-  font-weight: 700;
 }
 .nav-bar-link {
+  font-size: 20px;
   margin-bottom: 3px;
   letter-spacing: 0.5px;
+  font-weight: 700;
 }
 .home-container, .nav-bar-container, .container {
   font-size: 14px;
@@ -108,34 +108,6 @@ ul { list-style: none; }
 .work-description {
   padding: 20px 0;
 }
-.details-link {
-  font-size: 10px;
-  cursor: pointer;
-  margin-top: 1rem;
-}
-.details-container {
-  color: #F6F6F6;
-  height: 0px;
-  -webkit-transition:height, 0.5s linear;
-  -moz-transition: height, 0.5s linear;
-  -ms-transition: height, 0.5s linear;
-  -o-transition: height, 0.5s linear;
-  transition: height, 0.5s linear;
-  font-family: 'Nunito', sans-serif;
-  text-transform: initial;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-.details-container.show {
-  color: #000;
-  height: 200px;
-  -webkit-transition:height, 0.5s linear;
-  -moz-transition: height, 0.5s linear;
-  -ms-transition: height, 0.5s linear;
-  -o-transition: height, 0.5s linear;
-  transition: height, 0.5s linear;
-}
 /* .play-container {
   margin-top: 5rem;
 } */
@@ -159,17 +131,24 @@ ul { list-style: none; }
   font-size: 16px;
   cursor: pointer;
 }
-.project-image {
-  width: 100%;
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
+.project-image { width: 100%; }
 .project-blurb, .project-stack, .project-spec {
+  font-weight: 500;
+  text-transform: initial;
   margin-top: 1.5rem;
+  letter-spacing: 1px;
 }
 .project-close {
   cursor: pointer;
-  text-align: right;
+  text-align: left;
   margin-bottom: 2rem;
 }
+.project-close img { width: 20px; }
 @viewport {
   width: device-width ;
   zoom: 1.0 ;

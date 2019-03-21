@@ -51,17 +51,17 @@ function toggleBackToTopButton() {
 function europeanRugby() {
   var name = "European Rugby"
   var imageName = "european-rugby"
-  var blurb = "A bespoke marketing tool designed to engage brands with the world's biggest club rugby competitions"
-  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
-  var spec = "<div>> Easy-to-use admin system to create new pages</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div>"
+  var blurb = "A bespoke marketing tool designed to engage brands with the world's biggest club rugby competitions."
+  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Heroku</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
+  var spec = "<div>> Easy-to-use admin system to create and manage company pages</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div>"
   handleProject(name, imageName, blurb, techStack, spec)
 }
 
 function gifter() {
   var name = "Gifter"
   var imageName = "gifter"
-  var blurb = "A prototype of a web application that makes it easy for parents to start investing in their child's future by crowdfunding towards purposeful gifts and experiences.<br/><br/>View website"
-  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
+  var blurb = "A prototype of a web application that makes it easy for parents to start investing in their child's future by crowdfunding towards purposeful gifts and experiences.<br/><br/><a href='https://www.gifter.tech' target='_blank'>View website</a>"
+  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Heroku</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
   var spec = "<div>> Facebook login to create a smooth user registration process</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div>"
   handleProject(name, imageName, blurb, techStack, spec)
 }
@@ -69,9 +69,9 @@ function gifter() {
 function mycineplace() {
   var name = "MyCineplace"
   var imageName = "mycineplace"
-  var blurb = "A platform for all things cinema.<br/><br/>View website"
-  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
-  var spec = "<div>> Admin data management system</div><div>> Data integration through external APIs and web scraping</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div>"
+  var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes.<br/><br/><a href='https://www.mycineplace.com' target='_blank'>View website</a>"
+  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
+  var spec = "<div>> Admin data management system</div><div>> Data integration through external APIs and web scraping</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div><div>> User location detection to create a personal experience</div>"
   handleProject(name, imageName, blurb, techStack, spec)
 }
 
@@ -84,3 +84,24 @@ function handleProject(name, imageName, blurb, techStack, spec) {
   $(".projects").addClass("d-none")
   $(".project-container").removeClass("d-none")
 }
+
+// function setCountdown() {
+//   const countDownDate = new Date('May 17, 2019 14:40:00').getTime();
+//   const x = setInterval((function() {
+//     // Get todays date and time
+//     const now = (new Date).getTime();
+//     // Find the distance between now and the count down date
+//     const seconds = (countDownDate - now) / 1000;
+//     // Time calculations for days, hours, minutes and seconds
+//     const days = Math.floor(seconds/24/60/60);
+//     const hoursLeft = Math.floor((seconds) - (days*86400));
+//     const hours = Math.floor(hoursLeft/3600);
+//     const minutesLeft = Math.floor((hoursLeft) - (hours*3600));
+//     const minutes = Math.floor(minutesLeft/60);
+//     const secondsLeft = Math.ceil(seconds % 60);
+//     $(".counter-time[data=day]").text(days + "D");
+//     $(".counter-time[data=hour]").text(hours + "H");
+//     $(".counter-time[data=min]").text(minutes + "M");
+//     return $(".counter-time[data=sec]").text(secondsLeft + "S");
+//   }), 1000);
+// }
