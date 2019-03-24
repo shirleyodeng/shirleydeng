@@ -185,7 +185,7 @@ ul { list-style: none; }
   .logo {
     font-size: 30px !important;
     line-height: 23px !important;
-    letter-spacing: 1.5px !important;
+    letter-spacing: 1px !important;
   }
   .avatar { height: 110px !important; }
   .home-container { font-size: 13px !important; }
