@@ -6,11 +6,13 @@ $(document).ready(function() {
 
   // Scroll To Top
   toggleBackToTopButton()
-  $(window).scroll(function(){
+  
+  $(window).scroll(function() {
     toggleBackToTopButton()
   });
-  $('.btt').click(function(e) {
-    $("html, body").animate({ scrollTop: 0 }, "slow")
+
+  $('.btt').click(function() {
+    goToTop()
   });
 
   // WORK HARD PLAY HARD
@@ -39,6 +41,10 @@ $(document).ready(function() {
     $(".projects").removeClass("d-none")
   });
 });
+
+function goToTop() {
+  $("html, body").animate({ scrollTop: 0 }, "slow")
+}
 
 function toggleBackToTopButton() {
   var navbar = $(".nav-bar-container").height()
@@ -77,9 +83,9 @@ function mycineplace() {
 }
 
 function handleProject(name, imageName, blurb, techStack, spec) {
+  goToTop()
   $(".project-title").text(name)
   $(".project-image").attr("src", imageName)
-  //$(".project-image")[0].outerHTML = "<img src='images/" + imageName + ".png' class='project-image'>"
   $(".project-blurb").html(blurb)
   $(".project-stack").html(techStack)
   $(".project-spec").html(spec)
