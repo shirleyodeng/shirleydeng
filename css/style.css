@@ -25,11 +25,9 @@ ul { list-style: none; }
   line-height: 44px;
   font-size: 24px;
   text-align: center;
-  /* color: #FFF; */
   border-radius: 4em;
   backface-visibility: hidden;
   overflow: hidden;
-  /* background: #F24A4B; */
   cursor: pointer;
   z-index: 1000;
 }
@@ -99,18 +97,9 @@ ul { list-style: none; }
   margin-left: auto;
   margin-right: auto;
 }
-/* .header {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: #F24A4B;
-} */
 .work-description {
   padding: 20px 0;
 }
-/* .play-container {
-  margin-top: 5rem;
-} */
 .pink-hr {
   height: 2px;
   background: #F24A4B;
@@ -178,7 +167,7 @@ ul { list-style: none; }
   margin: 0 10px;
 }
 @viewport {
-  width: device-width ;
+  width: device-width;
   zoom: 1.0 ;
 }
 @media (max-width: 540px) {
