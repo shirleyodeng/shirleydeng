@@ -185,12 +185,10 @@ ul { list-style: none; }
   .logo {
     font-size: 30px !important;
     line-height: 23px !important;
+    letter-spacing: 1.5px !important;
   }
   .avatar { height: 110px !important; }
-  .home-container {
-    font-size: 13px !important;
-    /* line-height: 20px !important; */
-  }
+  .home-container { font-size: 13px !important; }
   .links-container { line-height: 18px !important; }
   .about-container { top: 100px !important; }
   .play-container, .work-container { margin-top: 20px; }
