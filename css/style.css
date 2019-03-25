@@ -126,6 +126,7 @@ ul { list-style: none; }
   line-height: 18px;
   position: relative;
 }
+.project-webpage img { width: 80px; }
 .project-link {
   position: absolute;
   top: 0;
