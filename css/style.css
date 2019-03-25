@@ -118,6 +118,7 @@ ul { list-style: none; }
 .project-webpages {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .project-webpage {
   font-size: 12px;
@@ -187,6 +188,6 @@ ul { list-style: none; }
   .links-container { line-height: 18px !important; }
   .about-container { top: 100px !important; }
   .play-container, .work-container { margin-top: 20px; }
-  .project-webpages { flex-direction: column; }
+  /* .project-webpages { flex-direction: column; } */
   .project-webpage { margin-bottom: 30px; }
 }
