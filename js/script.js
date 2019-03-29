@@ -19,6 +19,7 @@ $(document).ready(function() {
   $(".nav-bar-link").mouseenter(function(e) {
     $(e.target)[0].innerText += " HARD"
   });
+  
   $(".nav-bar-link").mouseleave(function(e) {
     $(e.target)[0].innerText = $(e.target)[0].innerText.replace(" HARD", "")
   });
