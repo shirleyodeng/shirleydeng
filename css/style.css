@@ -120,7 +120,7 @@ ul { list-style: none; }
 }
 .project-webpage {
   font-size: 12px;
-  margin: 0 20px;
+  margin: 0 25px 25px 25px;
   cursor: pointer;
   line-height: 18px;
   position: relative;
@@ -185,7 +185,4 @@ ul { list-style: none; }
   .home-container { font-size: 13px !important; }
   .links-container { line-height: 18px !important; }
   .about-container { top: 100px !important; }
-  /* .play-container, .work-container { margin-top: 20px; } */
-  /* .project-webpages { flex-direction: column; } */
-  .project-webpage { margin-bottom: 30px; }
 }

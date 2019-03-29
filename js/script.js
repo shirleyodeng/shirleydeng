@@ -19,7 +19,7 @@ $(document).ready(function() {
   $(".nav-bar-link").mouseenter(function(e) {
     $(e.target)[0].innerText += " HARD"
   });
-  
+
   $(".nav-bar-link").mouseleave(function(e) {
     $(e.target)[0].innerText = $(e.target)[0].innerText.replace(" HARD", "")
   });
@@ -75,7 +75,7 @@ function gifter() {
   var subheading = "Ruby on Rails Web App"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999252/shirleydeng/gifter.png' width='100%'>"
   var blurb = "A prototype of a web application that makes it easy for parents to start investing in their child's future by crowdfunding towards purposeful gifts and experiences.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://www.gifter.tech' target='_blank'> go to website</a>"
-  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Heroku</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
+  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Heroku</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>JavaScript</div></div>"
   var spec = "<div>> Facebook login to create an easy user registration process</div><div>> Fun, interactive event dashboard designed to engage children</div><div>> Messaging system for events</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div><div>> Stripe integration to receive and send payments</div>"
   handleProject(name, subheading, image, blurb, techStack, spec)
 }
@@ -92,12 +92,12 @@ function mycineplace() {
 
 function webApp() {
   var name = "Web Application (WIP)"
-  var subheading = "Ruby on Rails + ReactJS Web App"
+  var subheading = "ReactJS Web App + Ruby on Rails API"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/wip-webpage.png'>"
   var blurb = ""
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Docker</div><div>Git</div></div><div class='col-md-6'><div>ReactJS</div><div>HTML5</div><div>CSS3</div><div>Bootstrap</div></div>"
-  var spec = "<div>> Admin data management system</div><div>> Data integration through external APIs and web scraping</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div><div>> User location detection to create a personal experience</div>"
-  handleProject(name, subheading, image, blurb, techStack, "")
+  var spec = "<div>> Data integration through CSV imports and external APIs</div><div>> Extensive use of Google Maps Platform</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Stripe integration to receive payments</div>"
+  handleProject(name, subheading, image, blurb, techStack, spec)
 }
 
 function mobileApp() {
@@ -106,8 +106,8 @@ function mobileApp() {
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/wip-webpage.png'>"
   var blurb = ""
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Git</div></div><div class='col-md-6'><div>React Native</div><div>AWS</div></div>"
-  var spec = "<div>> Admin data management system</div><div>> Data integration through external APIs and web scraping</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div><div>> User location detection to create a personal experience</div>"
-  handleProject(name, subheading, image, blurb, techStack, "")
+  var spec = "<div>> Background location tracking</div><div>> Data integration through internal Rails JSON API and external APIs</div><div>> SMS verification system</div><div>> Relational database schema to represent and support processes</div>"
+  handleProject(name, subheading, image, blurb, techStack, spec)
 }
 
 function handleProject(name, subheading, image, blurb, techStack, spec) {
