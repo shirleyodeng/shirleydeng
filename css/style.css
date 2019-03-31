@@ -52,6 +52,7 @@ ul { list-style: none; }
   margin-bottom: 3px;
   letter-spacing: 0.5px;
   font-weight: 700;
+  color: #F24A4B;
 }
 .home-container, .nav-bar-container, .container {
   font-size: 14px;
