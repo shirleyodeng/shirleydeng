@@ -92,7 +92,7 @@ function mycineplace() {
 
 function webApp() {
   var name = "Web Application (WIP)"
-  var subheading = "ReactJS Web App + Ruby on Rails API"
+  var subheading = "React + Ruby on Rails API"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/wip-webpage.png'>"
   var blurb = ""
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Docker</div><div>Git</div></div><div class='col-md-6'><div>ReactJS</div><div>HTML5</div><div>CSS3</div><div>Bootstrap</div></div>"
@@ -102,7 +102,7 @@ function webApp() {
 
 function mobileApp() {
   var name = "Mobile Application (WIP)"
-  var subheading = "React Native Mobile App + Ruby on Rails API"
+  var subheading = "React Native + Ruby on Rails API"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/wip-webpage.png'>"
   var blurb = ""
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Git</div></div><div class='col-md-6'><div>React Native</div><div>AWS</div></div>"
