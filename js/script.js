@@ -34,8 +34,8 @@ $(document).ready(function() {
       gifter()
     } else if (name === "MyCineplace") {
       mycineplace()
-    } else if (name === "Web App") {
-      webApp()
+    } else if (name === "AdPlan") {
+      adplan()
     } else if (name === "Mobile App") {
       mobileApp()
     }
@@ -84,17 +84,17 @@ function mycineplace() {
   var name = "MyCineplace"
   var subheading = "Ruby on Rails Web App"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/mycineplace.png' width='100%'>"
-  var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://www.mycineplace.com' target='_blank'> go to website</a>"
+  var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://mycineplace.com' target='_blank'> go to website</a>"
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
   var spec = "<div>> Admin content management system</div><div>> Data integration through external APIs and web scraping</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div><div>> User location detection to create a personal experience</div>"
   handleProject(name, subheading, image, blurb, techStack, spec)
 }
 
-function webApp() {
-  var name = "Web Application (WIP)"
+function adplan() {
+  var name = "AdPlan (WIP)"
   var subheading = "React + Ruby on Rails API"
-  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/wip-webpage.png'>"
-  var blurb = ""
+  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1556575222/shirleydeng/adplan.png' width='100%'>"
+  var blurb = "<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://ad-plan.co.uk' target='_blank'> go to website</a>"
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Docker</div><div>Git</div></div><div class='col-md-6'><div>ReactJS</div><div>HTML5</div><div>CSS3</div><div>Bootstrap</div></div>"
   var spec = "<div>> Data integration through CSV imports and external APIs</div><div>> Extensive use of Google Maps Platform</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Stripe integration to receive payments</div>"
   handleProject(name, subheading, image, blurb, techStack, spec)
