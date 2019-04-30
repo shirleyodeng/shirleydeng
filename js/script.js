@@ -36,8 +36,8 @@ $(document).ready(function() {
       mycineplace()
     } else if (name === "AdPlan") {
       adplan()
-    } else if (name === "Mobile App") {
-      mobileApp()
+    } else if (name === "Endo") {
+      endo()
     }
   });
 
@@ -58,6 +58,26 @@ function toggleBackToTopButton() {
   } else {
     $('.btt').addClass("d-none")
   }
+}
+
+function adplan() {
+  var name = "AdPlan (WIP)"
+  var subheading = "React + Ruby on Rails API"
+  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1556575222/shirleydeng/adplan.png' width='100%'>"
+  var blurb = "A search engine to query all known display advertising in the UK, from all suppliers simultaneously. View surrounding bus routes to maximise impact. Pick ad spaces to generate a campaign plan, and it can then be purchasable from within the application.<br/>(Still in early development phase - not mobile friendly)<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://ad-plan.co.uk' target='_blank'> go to website</a>"
+  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Docker</div><div>Git</div></div><div class='col-md-6'><div>ReactJS</div><div>HTML5</div><div>CSS3</div><div>Bootstrap</div></div>"
+  var spec = "<div>> Internal Ruby on Rails API</div><div>> Data integration through CSV imports and external APIs</div><div>> Extensive use of Google Maps Platform</div><div>> Use of transportation APIs to implement bus routes feature</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Stripe integration to receive payments</div>"
+  handleProject(name, subheading, image, blurb, techStack, spec)
+}
+
+function endo() {
+  var name = "Endo at the Rotunda"
+  var subheading = "React Native + Ruby on Rails API"
+  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1556641817/shirleydeng/endo.png' width='100%'>"
+  var blurb = "Endo at the Rotunda is London’s newest high-end sushi restaurant, helmed by third generation sushi master Endo Kazutoshi, and based in the Rotunda above what was the BBC Television Centre. A React Native mobile app was built for customers to view and manage bookings, and pre-warn the restaurant of a customer's arrival to deliver the best service."
+  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Git</div></div><div class='col-md-6'><div>React Native</div><div>Capistrano</div><div>AWS</div></div>"
+  var spec = "<div>> Data integration through an internal Ruby on Rails API to retrieve and manage reservations</div><div>> SMS verification system using Twilio </div><div>> Background location tracking</div><div>> Separate React Native app build for restaurant staff to track locations of arriving reservations</div>"
+  handleProject(name, subheading, image, blurb, techStack, spec)
 }
 
 function europeanRugby() {
@@ -86,27 +106,7 @@ function mycineplace() {
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/mycineplace.png' width='100%'>"
   var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://mycineplace.com' target='_blank'> go to website</a>"
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
-  var spec = "<div>> Admin content management system</div><div>> Data integration through external APIs and web scraping</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div><div>> User location detection to create a personal experience</div>"
-  handleProject(name, subheading, image, blurb, techStack, spec)
-}
-
-function adplan() {
-  var name = "AdPlan (WIP)"
-  var subheading = "React + Ruby on Rails API"
-  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1556575222/shirleydeng/adplan.png' width='100%'>"
-  var blurb = "<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://ad-plan.co.uk' target='_blank'> go to website</a>"
-  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Docker</div><div>Git</div></div><div class='col-md-6'><div>ReactJS</div><div>HTML5</div><div>CSS3</div><div>Bootstrap</div></div>"
-  var spec = "<div>> Data integration through CSV imports and external APIs</div><div>> Extensive use of Google Maps Platform</div><div>> Clean, flowing user browsing journey</div><div>> Relational database schema to represent and support processes</div><div>> Stripe integration to receive payments</div>"
-  handleProject(name, subheading, image, blurb, techStack, spec)
-}
-
-function mobileApp() {
-  var name = "Mobile Application (WIP)"
-  var subheading = "React Native + Ruby on Rails API"
-  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/wip-webpage.png'>"
-  var blurb = ""
-  var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Git</div></div><div class='col-md-6'><div>React Native</div><div>AWS</div></div>"
-  var spec = "<div>> Background location tracking</div><div>> Data integration through internal Rails JSON API and external APIs</div><div>> SMS verification system</div><div>> Relational database schema to represent and support processes</div>"
+  var spec = "<div>> Admin content management system</div><div>> Data integration through external APIs and web scraping</div><div>> Relational database schema to represent and support processes</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Extensive use of jQuery to create an effective search/filter feature</div><div>> User location detection to create a personal experience</div><div>> Responsive web design</div>"
   handleProject(name, subheading, image, blurb, techStack, spec)
 }
 
