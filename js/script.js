@@ -32,7 +32,7 @@ $(document).ready(function() {
       europeanRugby()
     } else if (name === "Gifter") {
       gifter()
-    } else if (name === "MyCineplace") {
+    } else if (name === "My Cineplace") {
       mycineplace()
     } else if (name === "AdPlan") {
       adplan()
@@ -101,9 +101,9 @@ function gifter() {
 }
 
 function mycineplace() {
-  var name = "MyCineplace"
+  var name = "My Cineplace"
   var subheading = "Ruby on Rails Web App"
-  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999245/shirleydeng/mycineplace.png' width='100%'>"
+  var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1559410334/shirleydeng/my-cineplace.png' width='100%'>"
   var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://mycineplace.com' target='_blank'> go to website</a>"
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
   var spec = "<div>> Admin content management system</div><div>> Data integration through external APIs and web scraping</div><div>> Relational database schema to represent and support processes</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Extensive use of jQuery to create an effective search/filter feature</div><div>> User location detection to create a personal experience</div><div>> Responsive web design</div>"
