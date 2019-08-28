@@ -24,7 +24,36 @@ $(document).ready(function() {
     $(e.target)[0].innerText = $(e.target)[0].innerText.replace(" HARD", "")
   });
 
+  // GIRL
+  $(".girl")
+  .mouseenter(function() {
+    $(this).find("img[alt=techie]").addClass("d-none");
+    $(this).find("img[alt=waver]").removeClass("d-none");
+  })
+  .mouseleave(function() {
+    $(this).find("img[alt=techie]").removeClass("d-none");
+    $(this).find("img[alt=waver]").addClass("d-none");
+  });
+
   // Work
+  const start = moment("2018-01-15T08:00:00");
+  const keys = ["years", "months", "days", "hours", "minutes", "seconds"]
+  setInterval((function() {
+    var end = moment();
+    var duration = moment.duration(end.diff(start));
+    var data = duration._data;
+    var html = '';
+    keys.forEach(key => {
+      var value = data[key];
+      if (value !== 0) {
+        measurementText = value === 1 ? key.toUpperCase().slice(0, -1) : key.toUpperCase();
+        valueText = value;
+        html += `<span class='mx-2'><span class='value'>${value}</span> ${measurementText}</span>`
+      }
+    })
+    $('.counter-time').html(html);
+  }), 1000);
+
   $('.project-link').click(function(e) {
     e.preventDefault()
     var name = $(e.target).attr("data-name")
