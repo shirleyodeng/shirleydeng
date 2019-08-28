@@ -72,7 +72,7 @@ $(document).ready(function() {
 
   $('.project-close').click(function(e) {
     $(".project-container").addClass("d-none")
-    $(".projects").removeClass("d-none")
+    $(".work").removeClass("d-none")
   });
 });
 
@@ -111,7 +111,7 @@ function endo() {
 
 function europeanRugby() {
   var name = "European Rugby"
-  var subheading = "Ruby on Rails Web App"
+  var subheading = "Ruby on Rails"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999252/shirleydeng/european-rugby.png' width='100%'>"
   var blurb = "A bespoke marketing tool designed to engage brands with the world's biggest club rugby competitions."
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Heroku</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
@@ -121,7 +121,7 @@ function europeanRugby() {
 
 function gifter() {
   var name = "Gifter"
-  var subheading = "Ruby on Rails Web App"
+  var subheading = "Ruby on Rails"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999252/shirleydeng/gifter.png' width='100%'>"
   var blurb = "A prototype of a web application that makes it easy for parents to start investing in their child's future by crowdfunding towards purposeful gifts and experiences.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://www.gifter.tech' target='_blank'> go to website</a>"
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Heroku</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>JavaScript</div></div>"
@@ -131,7 +131,7 @@ function gifter() {
 
 function mycineplace() {
   var name = "My Cineplace"
-  var subheading = "Ruby on Rails Web App"
+  var subheading = "Ruby on Rails"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1559410334/shirleydeng/my-cineplace.png' width='100%'>"
   var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://mycineplace.com' target='_blank'> go to website</a>"
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
@@ -140,13 +140,14 @@ function mycineplace() {
 }
 
 function handleProject(name, subheading, image, blurb, techStack, spec) {
-  goToTop()
+  var scrollTop = $(".work-container").offset().top - 40
+  $("html, body").animate({ scrollTop: scrollTop }, "slow")
   $(".project-title").text(name)
   $(".project-subheading").text(subheading)
   $(".project-image-container").html(image)
   $(".project-blurb").html(blurb)
   $(".project-stack").html(techStack)
   $(".project-spec").html(spec)
-  $(".projects").addClass("d-none")
+  $(".work").addClass("d-none")
   $(".project-container").removeClass("d-none")
 }
