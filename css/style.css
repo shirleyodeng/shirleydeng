@@ -194,6 +194,9 @@ ul { list-style: none; }
   width: device-width;
   zoom: 1.0 ;
 }
+@media (max-width: 767px) {
+  .experience { margin-bottom: 3rem; }
+}
 @media (max-width: 540px) {
   .logo {
     font-size: 30px !important;
