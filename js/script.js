@@ -123,7 +123,7 @@ function gifter() {
   var name = "Gifter"
   var subheading = "Ruby on Rails"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1551999252/shirleydeng/gifter.png' width='100%'>"
-  var blurb = "A prototype of a web application that makes it easy for parents to start investing in their child's future by crowdfunding towards purposeful gifts and experiences.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://www.gifter.tech' target='_blank'> go to website</a>"
+  var blurb = "A prototype of a web application that makes it easy for parents to start investing in their child's future by crowdfunding towards purposeful gifts and experiences.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://www.wegifter.co' target='_blank'> go to website</a>"
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Heroku</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>JavaScript</div></div>"
   var spec = "<div>> Facebook login to create an easy user registration process</div><div>> Fun, interactive event dashboard designed to engage children</div><div>> Messaging system for events</div><div>> Relational database schema to represent and support processes</div><div>> Responsive web design</div><div>> Stripe integration to receive and send payments</div>"
   handleProject(name, subheading, image, blurb, techStack, spec)
@@ -133,7 +133,7 @@ function mycineplace() {
   var name = "My Cineplace"
   var subheading = "Ruby on Rails"
   var image = "<img src='https://res.cloudinary.com/devfclqwl/image/upload/v1559410334/shirleydeng/my-cineplace.png' width='100%'>"
-  var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes.<br/><br/>Go on, have a little browse <img src='images/back-arrow.png' class='flip-hor'><a href='https://mycineplace.com' target='_blank'> go to website</a>"
+  var blurb = "A one stop platform for all things cinema - discover content, watch trailers, read reviews, find showtimes."
   var techStack = "<div class='col-md-6'><div>Ruby on Rails</div><div>PostgreSQL</div><div>Capistrano</div><div>Git</div></div><div class='col-md-6'><div>HTML5</div><div>CSS3</div><div>Bootstrap</div><div>jQuery</div></div>"
   var spec = "<div>> Admin content management system</div><div>> Data integration through external APIs and web scraping</div><div>> Relational database schema to represent and support processes</div><div>> Facebook + Google login to create a smooth user registration process</div><div>> Clean, flowing user browsing journey</div><div>> Extensive use of jQuery to create an effective search/filter feature</div><div>> User location detection to create a personal experience</div><div>> Responsive web design</div>"
   handleProject(name, subheading, image, blurb, techStack, spec)
